@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="kino.MainPage">
+
+    <Grid ColumnDefinitions="100,500,100,100,100,200,*,*"
+          RowDefinitions="75,75,75,75,75,75,75,75"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          
+          >
+        <Image Source="film1.png" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"/>
+        <Label Text="Film1!" Grid.Column="1" Grid.Row="0" FontSize="Header"/>
+        <Label Text="Opis filmu film1! Oooo!"  Grid.Column="1" Grid.Row="1"/>
+        <Button Text="20:00" BackgroundColor="Gray" Grid.Column="2" Grid.Row="0" />
+        <Button Text="18:00" BackgroundColor="Gray" Grid.Column="3" Grid.Row="0" />
+        <Label Text="Kup bilet!" Grid.Column="4" Grid.Row="0" />
+        <Button Text="17 zł" BackgroundColor="Green" Grid.Column="4" Grid.Row="1" Clicked="kup"/>
+        <Image Source="koszyk.png" Grid.Column="6" Grid.Row="0" />
+        <Label Text="" x:Name="wynik" Grid.Column="7" Grid.Row="0"/>
+
+        <Image Source="film2.png" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2"/>
+        <Label Text="Film2!" Grid.Column="1" Grid.Row="2" FontSize="Header"/>
+        <Label Text="Opis filmu film2! Hehehehehe!"  Grid.Column="1" Grid.Row="3"/>
+        <Button Text="20:00" BackgroundColor="Gray" Grid.Column="2" Grid.Row="2" />
+        <Button Text="18:00" BackgroundColor="Gray" Grid.Column="3" Grid.Row="2" />
+        <Label Text="Kup bilet!" Grid.Column="4" Grid.Row="2" />
+        <Button Text="17 zł" BackgroundColor="Green" Grid.Column="4" Grid.Row="3" Clicked="kup"/>
+
+        <Image Source="film3.png" Grid.Column="0" Grid.Row="4" Grid.RowSpan="2"/>
+        <Label Text="Film3!" Grid.Column="1" Grid.Row="4" FontSize="Header"/>
+        <Label Text="Opis filmu film3! UuuuuuuuUUUUuu!"  Grid.Column="1" Grid.Row="5"/>
+        <Button Text="20:00" BackgroundColor="Gray" Grid.Column="2" Grid.Row="4" />
+        <Button Text="18:00" BackgroundColor="Gray" Grid.Column="3" Grid.Row="4" />
+        <Label Text="Kup bilet!" Grid.Column="4" Grid.Row="4" />
+        <Button Text="17 zł" BackgroundColor="Green" Grid.Column="4" Grid.Row="5" Clicked="kup"/>
+
+        <Image Source="film4.png" Grid.Column="0" Grid.Row="6" Grid.RowSpan="2"/>
+        <Label Text="Film4!" Grid.Column="1" Grid.Row="6" FontSize="Header"/>
+        <Label Text="Opis filmu film4! abjdgashghasghk!"  Grid.Column="1" Grid.Row="7"/>
+        <Button Text="20:00" BackgroundColor="Gray" Grid.Column="2" Grid.Row="6" />
+        <Button Text="18:00" BackgroundColor="Gray" Grid.Column="3" Grid.Row="6" />
+        <Label Text="Kup bilet!" Grid.Column="4" Grid.Row="6" />
+        <Button Text="17 zł" BackgroundColor="Green" Grid.Column="4" Grid.Row="7" Clicked="kup"/>
+
+    </Grid>
+
+</ContentPage>
